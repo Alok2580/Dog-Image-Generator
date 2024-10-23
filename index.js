@@ -264,10 +264,10 @@ async function greet(params) {
         console.log(final_data)
     // console.log(final_data);
     // p.innerHTML=final_data;
-    // p.style.backgroundImage=`url(${final_data})`;
+    p.style.backgroundImage=`url(${final_data})`;
     // p.append(final_data);
-    let img=document.querySelector('img');
-    img.setAttribute("src",final_data);
+    // let img=document.querySelector('img');
+    // img.setAttribute("src",final_data);
     return final_data;
    
   } catch (err) {
@@ -277,8 +277,9 @@ async function greet(params) {
   }
   // console.log("hello");
 }
+
 let btn=document.querySelector('button');
-let p= document.querySelector('div');
+let p= document.querySelector('#inner');
 btn.addEventListener('click',function(){
 greet();
 })
